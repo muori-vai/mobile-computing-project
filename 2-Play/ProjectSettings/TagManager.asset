@@ -10,6 +10,10 @@ TagManager:
   - Apple
   - GoldenApple
   - BlueApple
+  - Ball
+  - Goal
+  - PowerBigger
+  - PowerFaster
   layers:
   - Default
   - TransparentFX
