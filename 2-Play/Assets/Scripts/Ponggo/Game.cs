@@ -12,6 +12,9 @@ public class Game : MonoBehaviour
 
     public GameObject player1text;
     public GameObject player2text;
+
+    public GameObject player1text2;
+    public GameObject player2text2;
     
     private int player1score;
     private int player2score;
@@ -28,18 +31,18 @@ public class Game : MonoBehaviour
         {
             if(player1score > player2score)
             {
-                player1text.GetComponent<TMPro.TextMeshProUGUI>().text = "You Win!";
-                player1text.GetComponent<TMPro.TextMeshProUGUI>().text = "You Lose!";
+                player1text2.GetComponent<TMPro.TextMeshProUGUI>().text = "You Win!";
+                player2text2.GetComponent<TMPro.TextMeshProUGUI>().text = "You Lose!";
             }
             else if(player1score < player2score)
             {
-                player2text.GetComponent<TMPro.TextMeshProUGUI>().text = "You Win!";
-                player1text.GetComponent<TMPro.TextMeshProUGUI>().text = "You Lose!";
+                player2text2.GetComponent<TMPro.TextMeshProUGUI>().text = "You Win!";
+                player1text2.GetComponent<TMPro.TextMeshProUGUI>().text = "You Lose!";
             }
             else
             {
-                player1text.GetComponent<TMPro.TextMeshProUGUI>().text = "Draw!";
-                player2text.GetComponent<TMPro.TextMeshProUGUI>().text = "Draw!";
+                player1text2.GetComponent<TMPro.TextMeshProUGUI>().text = "Draw!";
+                player2text2.GetComponent<TMPro.TextMeshProUGUI>().text = "Draw!";
             }
             
         }
