@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = new Vector2(joystick.Horizontal * speed, 0f);
+        rb.velocity = new Vector2(joystick.Horizontal * speed, joystick.Vertical * speed);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
