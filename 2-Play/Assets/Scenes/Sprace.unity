@@ -788,12 +788,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorPrefab: {fileID: 4285432750504870985, guid: 56a54155d6c58e44fa03863b0bce5623, type: 3}
+  rotationZ: 0
   interval: 1.5
   minSpeed: -4
   maxSpeed: -2
+  minSpeedY: 0
+  maxSpeedY: 0
   minHeight: -5
   maxHeight: 6
-  originX: 9
+  minWidth: 9
+  maxWidth: 9
 --- !u!212 &456472094
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1449,12 +1453,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorPrefab: {fileID: 4285432750504870985, guid: 56a54155d6c58e44fa03863b0bce5623, type: 3}
+  rotationZ: 0
   interval: 0.5
   minSpeed: 2
   maxSpeed: 5
+  minSpeedY: 0
+  maxSpeedY: 0
   minHeight: -12.5
   maxHeight: -6
-  originX: -9
+  minWidth: -9
+  maxWidth: -9
 --- !u!212 &856772452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1551,12 +1559,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorPrefab: {fileID: 4285432750504870985, guid: 56a54155d6c58e44fa03863b0bce5623, type: 3}
+  rotationZ: 0
   interval: 0.5
   minSpeed: -5
   maxSpeed: -2
+  minSpeedY: 0
+  maxSpeedY: 0
   minHeight: 6
   maxHeight: 12.5
-  originX: 9
+  minWidth: 9
+  maxWidth: 9
 --- !u!212 &910393882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1704,12 +1716,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorPrefab: {fileID: 4285432750504870985, guid: 56a54155d6c58e44fa03863b0bce5623, type: 3}
+  rotationZ: 0
   interval: 1.5
   minSpeed: 2
   maxSpeed: 4
+  minSpeedY: 0
+  maxSpeedY: 0
   minHeight: -6
   maxHeight: 5
-  originX: -9
+  minWidth: -9
+  maxWidth: -9
 --- !u!212 &1155287761
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -5,12 +5,16 @@ using UnityEngine;
 public class MeteorSpawner : MonoBehaviour
 {
     public GameObject meteorPrefab;
+    public float rotationZ;
     public float interval;
     public float minSpeed;
     public float maxSpeed;
+    public float minSpeedY;
+    public float maxSpeedY;
     public float minHeight;
     public float maxHeight;
-    public float originX;
+    public float minWidth;
+    public float maxWidth;
 
     void Start()
     {
@@ -21,9 +25,11 @@ public class MeteorSpawner : MonoBehaviour
     {
         GameObject m = Instantiate(meteorPrefab) as GameObject;
 
-        m.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(minSpeed, maxSpeed), 0);
+        m.transform.Rotate(0, 0, rotationZ);
 
-        Vector3 pos = new Vector3(originX, Random.Range(minHeight, maxHeight), 0);
+        m.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(minSpeed, maxSpeed), Random.Range(minSpeedY, maxSpeedY));
+
+        Vector3 pos = new Vector3(Random.Range(minWidth, maxWidth), Random.Range(minHeight, maxHeight), 0);
 
         m.transform.position = pos;
     }
