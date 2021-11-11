@@ -44,7 +44,6 @@ public class Game : MonoBehaviour
                 player1text2.GetComponent<TMPro.TextMeshProUGUI>().text = "Draw!";
                 player2text2.GetComponent<TMPro.TextMeshProUGUI>().text = "Draw!";
             }
-            
         }
     }
 

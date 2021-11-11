@@ -20,14 +20,17 @@ public class Attraction : MonoBehaviour
 
     void Update()
     {
-        float distance = Vector3.Distance(this.transform.position, new Vector3(0, 0, 0));
-        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(0, 0, 0), attraction * Time.deltaTime * distance);
+        if(!falling)
+        {
+            float distance = Vector3.Distance(this.transform.position, new Vector3(0, 0, 0));
+            this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(0, 0, 0), attraction * Time.deltaTime * distance);
+        }
 
         if(falling)
         {
             temp = this.transform.localScale;
-            temp.x -= 0.005f;
-            temp.y -= 0.005f;
+            temp.x -= 0.003f; //praticamente la "velocità" di caduta
+            temp.y -= 0.003f;
             this.transform.localScale = temp;
         }
 
