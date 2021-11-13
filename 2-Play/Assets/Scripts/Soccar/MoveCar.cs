@@ -53,6 +53,5 @@ public class MoveCar : MonoBehaviour
         this.transform.localRotation = Quaternion.identity;
         rb.angularVelocity = 0;
         rb.velocity = Vector2.zero;
-        
     }
 }
