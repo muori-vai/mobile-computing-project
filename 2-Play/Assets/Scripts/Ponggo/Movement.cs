@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed;
-    public Rigidbody2D rb;
+    [SerializeField] private float speed;
+    [SerializeField] private Rigidbody2D rb;
 
-    public Joystick joystick;
+    [SerializeField] private Joystick joystick;
 
     void Update()
     {
         rb.velocity = new Vector2(joystick.Horizontal * speed, joystick.Vertical * speed);
     }
 
+    /* usato su Pong
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "PowerBigger")
@@ -26,5 +27,15 @@ public class Movement : MonoBehaviour
         {
             this.speed += 5.0f;
         }
+    } */
+
+    public float GetSpeed()
+    {
+        return this.speed;
+    }
+
+    public void SetSpeed(float newSpeed)
+    {
+        this.speed = newSpeed;
     }
 }

@@ -5,13 +5,16 @@ using UnityEngine;
 public class MoveCar : MonoBehaviour
 {
     public float speed;
-    public float rotationSpeed;
+    [SerializeField] private float initialRotationSpeed;
+    private float rotationSpeed;
     private Rigidbody2D rb;
     private Vector2 movement;
     [SerializeField]
     private float maxSpeed;
     [SerializeField]
     private Vector3 initialPosition;
+    [SerializeField]
+    private Vector2 initialScale = new Vector2(1, 1);
 
     [SerializeField]
     private Joystick joystick;
@@ -49,9 +52,64 @@ public class MoveCar : MonoBehaviour
 
     public void Restart()
     {
+        rb.mass = 1;
+        rotationSpeed = initialRotationSpeed;
+        this.transform.localScale = initialScale;
         this.transform.position = initialPosition;
         this.transform.localRotation = Quaternion.identity;
         rb.angularVelocity = 0;
         rb.velocity = Vector2.zero;
+        this.transform.GetChild(1).gameObject.SetActive(false);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("PowerBigger"))
+        {
+            StartCoroutine(GetBigger());
+        }
+        if(other.CompareTag("PowerFaster"))
+        {
+            StartCoroutine(GetLighter());
+        }
+    }
+
+    private IEnumerator GetBigger()
+    {
+        Vector2 scale = this.transform.localScale;
+        while(scale.x < 2)
+        {
+            scale.x += 0.2f;
+            scale.y += 0.2f;
+            this.transform.localScale = scale;
+            yield return new WaitForSeconds(0.1f);
+        }
+        rb.mass = 2;
+        rotationSpeed -= 90f;
+        yield return new WaitForSeconds(8); //power-up, durata default: 8 secondi
+        StartCoroutine(GetSmaller());
+    }
+
+    private IEnumerator GetSmaller()
+    {
+        Vector2 scale = this.transform.localScale;
+        while(scale.x > 1)
+        {
+            scale.x -= 0.2f;
+            scale.y -= 0.2f;
+            this.transform.localScale = scale;
+            yield return new WaitForSeconds(0.1f);
+        }
+        rb.mass = 1;
+        rotationSpeed = initialRotationSpeed;
+        this.transform.localScale = initialScale;
+    }
+
+    private IEnumerator GetLighter()
+    {
+        rb.mass = 0.5f;
+        this.transform.GetChild(1).gameObject.SetActive(true); //durata particle system da cambiare se cambi la durata del power-up
+        yield return new WaitForSeconds(8); //power-up, durata default: 8 secondi
+        rb.mass = 1;
     }
 }

@@ -19,6 +19,8 @@ public class Game : MonoBehaviour
     private int player1score;
     private int player2score;
 
+    public bool isFinished;
+
     void Start()
     {
         player1score = 0;
@@ -27,7 +29,7 @@ public class Game : MonoBehaviour
 
     void Update()
     {
-        if(Time.timeScale == 0)
+        if(isFinished)
         {
             if(player1score > player2score)
             {
