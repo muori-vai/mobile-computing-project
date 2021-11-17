@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Doj.unity
+- path: Assets/Scenes/Snek.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
