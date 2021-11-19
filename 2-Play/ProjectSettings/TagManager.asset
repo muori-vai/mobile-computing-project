@@ -17,6 +17,11 @@ TagManager:
   - MovingObject
   - Point
   - PowerFreeze
+  - WallLeft
+  - WallRight
+  - WallUp
+  - WallDown
+  - Head
   layers:
   - Default
   - TransparentFX
