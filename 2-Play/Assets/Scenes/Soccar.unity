@@ -2471,7 +2471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description:
   - 'Things to implement:'
-  - '- Power-up that closes you gate a little bit'
+  - '- Power-up that closes your gate a little bit'
   - '- Power-up that freezes the enemy'
   - '- Power-up that inverts enemy controls'
   - --maybe by doing speed = -speed

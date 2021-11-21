@@ -18,7 +18,7 @@ public class Attraction : MonoBehaviour
         falling = false;
     } 
 
-    void Update()
+    void FixedUpdate()
     {
         if(!falling)
         {
@@ -29,8 +29,8 @@ public class Attraction : MonoBehaviour
         if(falling)
         {
             temp = this.transform.localScale;
-            temp.x -= 0.003f; //praticamente la "velocità" di caduta
-            temp.y -= 0.003f;
+            temp.x -= 0.03f; //praticamente la "velocità" di caduta
+            temp.y -= 0.03f;
             this.transform.localScale = temp;
         }
 
