@@ -52,7 +52,7 @@ public class Ball : MonoBehaviour
     {
         if(other.tag == "Goal")
         {
-            Reset();
+            this.transform.position = new Vector3(this.transform.position.x, -this.transform.position.y, 0);
         }
     }
 
