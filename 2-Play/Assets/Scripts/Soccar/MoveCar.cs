@@ -107,7 +107,7 @@ public class MoveCar : MonoBehaviour
 
     private IEnumerator GetLighter()
     {
-        rb.mass = 0.5f;
+        rb.mass = 0.8f;
         this.transform.GetChild(1).gameObject.SetActive(true); //durata particle system da cambiare se cambi la durata del power-up
         yield return new WaitForSeconds(8); //power-up, durata default: 8 secondi
         rb.mass = 1;
