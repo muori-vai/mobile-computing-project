@@ -9,15 +9,12 @@ public class MoveCar : MonoBehaviour
     private float rotationSpeed;
     private Rigidbody2D rb;
     private Vector2 movement;
-    [SerializeField]
-    private float maxSpeed;
-    [SerializeField]
-    private Vector3 initialPosition;
-    [SerializeField]
-    private Vector2 initialScale = new Vector2(1, 1);
+    [SerializeField] private float maxSpeed;
+    [SerializeField] private Vector3 initialPosition;
+    [SerializeField] private Vector2 initialScale = new Vector2(1, 1);
+    //[SerializeField] float kickForce;
 
-    [SerializeField]
-    private Joystick joystick;
+    [SerializeField] private Joystick joystick;
 
     void Start()
     {
@@ -48,6 +45,7 @@ public class MoveCar : MonoBehaviour
     void moveCharacter(Vector2 direction)
     {
         rb.AddForce(direction * speed);
+        //rb.velocity = direction * speed;
     }
 
     public void Restart()
@@ -59,6 +57,7 @@ public class MoveCar : MonoBehaviour
         this.transform.localRotation = Quaternion.identity;
         rb.angularVelocity = 0;
         rb.velocity = Vector2.zero;
+        this.transform.GetChild(0).gameObject.GetComponent<TrailRenderer>().Clear();
         this.transform.GetChild(1).gameObject.SetActive(false);
     }
 
@@ -73,6 +72,15 @@ public class MoveCar : MonoBehaviour
             StartCoroutine(GetLighter());
         }
     }
+
+    //private void OnCollisionEnter2D(Collision2D other)
+    //{
+        //Vector2 normal = other.GetContact(0).normal;
+        //rb.AddForce(-normal * kickForce/4);
+        //other.otherRigidbody.AddForce(normal * kickForce); per qualche motivo, fa "rimbalzare" il personaggio
+        //other.otherCollider.GetComponent<Rigidbody2D>().AddForce(normal * kickForce); fa la stessa cosa della riga sopra
+
+    //}
 
     private IEnumerator GetBigger()
     {
