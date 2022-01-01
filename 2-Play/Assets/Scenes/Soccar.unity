@@ -2281,9 +2281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf78ff3c58274642addba4fd3a49b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 150
   initialRotationSpeed: 270
-  maxSpeed: 12
+  maxSpeed: 16
   initialPosition: {x: 0, y: -7.5, z: 0}
   initialScale: {x: 1, y: 1}
   joystick: {fileID: 1544423763}
@@ -2300,7 +2300,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 6
+  m_LinearDrag: 5
   m_AngularDrag: 2
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -2408,9 +2408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf78ff3c58274642addba4fd3a49b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 150
   initialRotationSpeed: 270
-  maxSpeed: 12
+  maxSpeed: 16
   initialPosition: {x: 0, y: 7.5, z: 0}
   initialScale: {x: 1, y: 1}
   joystick: {fileID: 39424452}
@@ -2427,7 +2427,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 6
+  m_LinearDrag: 5
   m_AngularDrag: 2
   m_GravityScale: 0
   m_Material: {fileID: 0}
