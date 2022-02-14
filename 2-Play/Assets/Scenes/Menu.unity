@@ -718,6 +718,7 @@ GameObject:
   - component: {fileID: 299542847}
   - component: {fileID: 299542846}
   - component: {fileID: 299542845}
+  - component: {fileID: 299542848}
   m_Layer: 5
   m_Name: TitleP
   m_TagString: Untagged
@@ -789,13 +790,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 299542843}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 299542848}
+        m_TargetAssemblyTypeName: TitleColor, Assembly-CSharp
+        m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -839,6 +840,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299542843}
   m_CullTransparentMesh: 1
+--- !u!114 &299542848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299542843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd6c8c125dfae4d9283afce41b0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 299542846}
+  colors:
+  - {r: 0.5058824, g: 0.5921569, b: 0.6431373, a: 1}
+  - {r: 0.61960787, g: 0.5058824, b: 0.6431373, a: 1}
+  - {r: 0.6431373, g: 0.5058824, b: 0.5137255, a: 1}
+  - {r: 0.6431373, g: 0.6431373, b: 0.5058824, a: 1}
+  - {r: 0.56078434, g: 0.6431373, b: 0.5058824, a: 1}
 --- !u!1 &300577309
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +871,7 @@ GameObject:
   - component: {fileID: 300577313}
   - component: {fileID: 300577312}
   - component: {fileID: 300577311}
+  - component: {fileID: 300577314}
   m_Layer: 5
   m_Name: TitleY
   m_TagString: Untagged
@@ -922,13 +943,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 300577309}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 300577314}
+        m_TargetAssemblyTypeName: TitleColor, Assembly-CSharp
+        m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -972,6 +993,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300577309}
   m_CullTransparentMesh: 1
+--- !u!114 &300577314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300577309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd6c8c125dfae4d9283afce41b0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 300577312}
+  colors:
+  - {r: 0.5058824, g: 0.5921569, b: 0.6431373, a: 1}
+  - {r: 0.61960787, g: 0.5058824, b: 0.6431373, a: 1}
+  - {r: 0.6431373, g: 0.5058824, b: 0.5137255, a: 1}
+  - {r: 0.6431373, g: 0.6431373, b: 0.5058824, a: 1}
+  - {r: 0.56078434, g: 0.6431373, b: 0.5058824, a: 1}
 --- !u!1 &301620161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1488,7 @@ GameObject:
   - component: {fileID: 594057190}
   - component: {fileID: 594057189}
   - component: {fileID: 594057188}
+  - component: {fileID: 594057191}
   m_Layer: 5
   m_Name: Title2
   m_TagString: Untagged
@@ -1519,13 +1560,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 594057186}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 594057191}
+        m_TargetAssemblyTypeName: TitleColor, Assembly-CSharp
+        m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1544,7 +1585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.50473475, g: 0.59099835, b: 0.6415094, a: 1}
+  m_Color: {r: 0.5058824, g: 0.5921569, b: 0.6431373, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1569,6 +1610,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594057186}
   m_CullTransparentMesh: 1
+--- !u!114 &594057191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594057186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd6c8c125dfae4d9283afce41b0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 594057189}
+  colors:
+  - {r: 0.5058824, g: 0.5921569, b: 0.6431373, a: 1}
+  - {r: 0.61960787, g: 0.5058824, b: 0.6431373, a: 1}
+  - {r: 0.6431373, g: 0.5058824, b: 0.5137255, a: 1}
+  - {r: 0.6431373, g: 0.6431373, b: 0.5058824, a: 1}
+  - {r: 0.56078434, g: 0.6431373, b: 0.5058824, a: 1}
 --- !u!21 &644217333
 Material:
   serializedVersion: 6
@@ -2340,6 +2400,7 @@ GameObject:
   - component: {fileID: 856545619}
   - component: {fileID: 856545618}
   - component: {fileID: 856545617}
+  - component: {fileID: 856545620}
   m_Layer: 5
   m_Name: TitleL
   m_TagString: Untagged
@@ -2411,13 +2472,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 856545615}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 856545620}
+        m_TargetAssemblyTypeName: TitleColor, Assembly-CSharp
+        m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2461,6 +2522,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856545615}
   m_CullTransparentMesh: 1
+--- !u!114 &856545620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856545615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd6c8c125dfae4d9283afce41b0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 856545618}
+  colors:
+  - {r: 0.5058824, g: 0.5921569, b: 0.6431373, a: 1}
+  - {r: 0.61960787, g: 0.5058824, b: 0.6431373, a: 1}
+  - {r: 0.6431373, g: 0.5058824, b: 0.5137255, a: 1}
+  - {r: 0.6431373, g: 0.6431373, b: 0.5058824, a: 1}
+  - {r: 0.56078434, g: 0.6431373, b: 0.5058824, a: 1}
 --- !u!1 &877567775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,6 +3563,7 @@ GameObject:
   - component: {fileID: 1151939629}
   - component: {fileID: 1151939628}
   - component: {fileID: 1151939627}
+  - component: {fileID: 1151939630}
   m_Layer: 5
   m_Name: TitleA
   m_TagString: Untagged
@@ -3554,13 +3635,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1151939625}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1151939630}
+        m_TargetAssemblyTypeName: TitleColor, Assembly-CSharp
+        m_MethodName: ChangeColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3604,6 +3685,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151939625}
   m_CullTransparentMesh: 1
+--- !u!114 &1151939630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151939625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd6c8c125dfae4d9283afce41b0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1151939628}
+  colors:
+  - {r: 0.5058824, g: 0.5921569, b: 0.6431373, a: 1}
+  - {r: 0.61960787, g: 0.5058824, b: 0.6431373, a: 1}
+  - {r: 0.6431373, g: 0.5058824, b: 0.5137255, a: 1}
+  - {r: 0.6431373, g: 0.6431373, b: 0.5058824, a: 1}
+  - {r: 0.56078434, g: 0.6431373, b: 0.5058824, a: 1}
 --- !u!1 &1188140007
 GameObject:
   m_ObjectHideFlags: 0
