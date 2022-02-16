@@ -65,10 +65,12 @@ public class MoveCar : MonoBehaviour
     {
         if(other.CompareTag("PowerBigger"))
         {
+            GameObject.Find("SFXPickup").GetComponent<AudioSource>().Play();
             StartCoroutine(GetBigger());
         }
         if(other.CompareTag("PowerFaster"))
         {
+            GameObject.Find("SFXPickup").GetComponent<AudioSource>().Play();
             StartCoroutine(GetLighter());
         }
     }
