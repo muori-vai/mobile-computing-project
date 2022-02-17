@@ -15,7 +15,8 @@ public class Game : MonoBehaviour
 
     public GameObject player1text2;
     public GameObject player2text2;
-    
+    [SerializeField] private GameObject winSound;
+
     private int player1score;
     private int player2score;
 
@@ -39,6 +40,7 @@ public class Game : MonoBehaviour
         {
             if(player1score >= finishScore || player2score >= finishScore || isFinished)
             {
+                this.winSound.SetActive(true);
                 this.Finish();
             }
         }

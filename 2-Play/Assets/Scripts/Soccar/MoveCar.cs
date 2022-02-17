@@ -50,7 +50,7 @@ public class MoveCar : MonoBehaviour
 
     public void Restart()
     {
-        rb.mass = 1;
+        rb.mass = 0.5f;
         rotationSpeed = initialRotationSpeed;
         this.transform.localScale = initialScale;
         this.transform.position = initialPosition;
@@ -94,7 +94,7 @@ public class MoveCar : MonoBehaviour
             this.transform.localScale = scale;
             yield return new WaitForSeconds(0.1f);
         }
-        rb.mass = 2;
+        rb.mass = 1.5f;
         rotationSpeed -= 90f;
         yield return new WaitForSeconds(8); //power-up, durata default: 8 secondi
         StartCoroutine(GetSmaller());
@@ -110,16 +110,16 @@ public class MoveCar : MonoBehaviour
             this.transform.localScale = scale;
             yield return new WaitForSeconds(0.1f);
         }
-        rb.mass = 1;
+        rb.mass = 0.5f;
         rotationSpeed = initialRotationSpeed;
         this.transform.localScale = initialScale;
     }
 
     private IEnumerator GetLighter()
     {
-        rb.mass = 0.8f;
+        rb.mass = 0.25f;
         this.transform.GetChild(1).gameObject.SetActive(true); //durata particle system da cambiare se cambi la durata del power-up
         yield return new WaitForSeconds(8); //power-up, durata default: 8 secondi
-        rb.mass = 1;
+        rb.mass = 0.5f;
     }
 }
