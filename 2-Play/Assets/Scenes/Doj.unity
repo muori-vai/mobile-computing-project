@@ -4650,8 +4650,9 @@ MonoBehaviour:
   winSound: {fileID: 1054961070}
   isFinished: 0
   pauseMenu: {fileID: 443876090}
-  finishScore: 8
+  finishScore: 10
   isCasual: 1
+  clip: {fileID: 8300000, guid: 0e3b57fe9497c4a4cb25a0414d430a2c, type: 3}
 --- !u!4 &1171629713
 Transform:
   m_ObjectHideFlags: 0

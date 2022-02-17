@@ -26,8 +26,14 @@ public class Game : MonoBehaviour
     public int finishScore;
     public bool isCasual;
 
+    private AudioSource p;
+    public AudioClip clip;
+
     void Start()
     {
+        p = GameObject.Find("Permanent").GetComponent<AudioSource>();
+        p.clip = clip;
+        p.Play();
         Time.timeScale = 1;
         isFinished = false;
         player1score = 0;

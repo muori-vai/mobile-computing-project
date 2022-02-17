@@ -3414,7 +3414,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294939119
-  m_fontColor: {r: 0.93605953, g: 0.56981134, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3536,6 +3536,7 @@ MonoBehaviour:
   player1text2: {fileID: 1017528503}
   player2text2: {fileID: 903166869}
   winSound: {fileID: 808313364}
+  clip: {fileID: 8300000, guid: c30fb566db8d61c47b24b39f932ba848, type: 3}
   isCasual: 1
   pauseMenu: {fileID: 1480751050}
   finishScore: 3
@@ -3797,7 +3798,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294939119
-  m_fontColor: {r: 0.93605953, g: 0.56981134, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

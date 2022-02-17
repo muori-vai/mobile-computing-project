@@ -1093,6 +1093,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1168604922}
   finishScore: 5
   isCasual: 1
+  clip: {fileID: 8300000, guid: 42eca95eca33c464b93c6797d20a673c, type: 3}
 --- !u!1 &475849142
 GameObject:
   m_ObjectHideFlags: 0

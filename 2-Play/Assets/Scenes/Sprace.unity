@@ -3293,6 +3293,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 604554106}
   finishScore: 10
   isCasual: 1
+  clip: {fileID: 8300000, guid: 42a6e4e230cce4646953a0dd33a9d75a, type: 3}
 --- !u!4 &1072910839
 Transform:
   m_ObjectHideFlags: 0
